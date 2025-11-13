@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { pool} from "../db";
+import { pool} from "../db.js";
 
 const getBooks = async(req: Request, res: Response) => {
     const { id } = req.params;
