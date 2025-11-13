@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import endpoint from "../controllers/bookController";
+import endpoint from "../controllers/bookController.js";
 const router = Router();
 // http://localhost:4000/api/all/books
 router.get("/all/books", endpoint.getBooks);
