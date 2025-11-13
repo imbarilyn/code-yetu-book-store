@@ -1,7 +1,7 @@
 import express from 'express';
-import { config } from "./config";
-import bookRoutes from "./routes/bookRoutes";
-import { createBooksTable } from "./models/books";
+import { config } from "./config.js";
+import bookRoutes from "./routes/bookRoutes.js";
+import { createBooksTable } from "./models/books.js";
 const app = express();
 // middelware
 app.use(express.json());
