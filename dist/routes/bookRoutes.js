@@ -7,5 +7,6 @@ router.get("/single/book/:id", endpoint.getBooks);
 router.post("/add/book", endpoint.addBook);
 router.put("/update/book/:id", endpoint.updateBook);
 router.delete("/delete/book/:id", endpoint.deleteBook);
+router.get("/test", endpoint.testEndpoint);
 export default router;
 //# sourceMappingURL=bookRoutes.js.map

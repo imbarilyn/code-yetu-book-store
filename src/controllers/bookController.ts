@@ -136,9 +136,9 @@ const deleteBook = async (req: Request, res: Response) => {
 }
 
 const testEndpoint = async (req: Request, res: Response) => {
-    res.send("Test endpoint is working");
+    console.log("Test endpoint hit");
+    return res.status(200).json({message: "Test endpoint is working"})
 }
-
 
 export default  {
     getBooks,

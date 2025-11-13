@@ -8,5 +8,6 @@ export const config = {
     DB_PASSWORD: process.env.DB_PASSWORD,
     DB_PORT: process.env.DB_PORT,
     SERVER_PORT: process.env.SERVER_PORT || 3000,
+    MODE: process.env.MODE
 };
 //# sourceMappingURL=config.js.map

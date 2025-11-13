@@ -13,5 +13,6 @@ app.use("/api", bookRoutes);
 await createBooksTable()
 // start server
 app.listen(config.SERVER_PORT, ()=>{
+    console.log("Database", process.env.DATABASE_UR)
     console.log(`Server is running on port ${config.SERVER_PORT}`);
 })

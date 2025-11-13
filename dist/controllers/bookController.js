@@ -112,10 +112,15 @@ const deleteBook = async (req, res) => {
         return res.status(500).json({ message: "Internal server error" });
     }
 };
+const testEndpoint = async (req, res) => {
+    console.log("Test endpoint hit");
+    return res.status(200).json({ message: "Test endpoint is working" });
+};
 export default {
     getBooks,
     addBook,
     updateBook,
-    deleteBook
+    deleteBook,
+    testEndpoint
 };
 //# sourceMappingURL=bookController.js.map
